@@ -6,9 +6,9 @@ rtc:
   port_range_start: 50000
   port_range_end: 60000
   use_external_ip: true
-  ip_config:
-    nat1to1_ips:
-      - 54.254.162.138
+  nat1to1_ips:
+    - 54.254.162.138
+
 
 keys:
   dev: 3teqHX7vIBrQd3Ae9cwK4WlTfSZoePkGnxWvu90sWTFB
