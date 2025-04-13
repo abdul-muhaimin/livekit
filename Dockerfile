@@ -25,7 +25,9 @@ RUN apk add --no-cache git
 
 # Clone the LiveKit repo and checkout latest version
 RUN git clone https://github.com/livekit/livekit.git .
-RUN git checkout v1.10.1
+RUN git fetch --all --tags
+RUN git checkout tags/v1.10.1 -b v1.10.1
+
 
 # Download Go modules
 RUN go mod download
